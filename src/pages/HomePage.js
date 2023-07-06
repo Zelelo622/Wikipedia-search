@@ -17,7 +17,7 @@ const HomePage = observer(() => {
       <section className="search">
         <div className="container">
           <Search handleSearch={handleSearch} />
-          <SearchResult searchResult={searchStore.searchResult} />
+          <SearchResult searchResult={searchStore.searchResult} searchInfo={searchStore.searchInfo} />
         </div>
       </section>
     </main>
