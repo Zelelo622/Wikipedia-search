@@ -8,10 +8,7 @@ import { searchWikipedia } from "../api/searchWikipedia";
 const HomePage = observer(() => {
   const { searchStore } = useContext(Context);
 
-  const handleSearch = async (e) => {
-    // const searchResults = await searchWikipedia(searchStore.searchQuery);
-    // searchStore.setSearchResult(searchResults);
-    e.preventDefault();
+  const handleSearch = async () => {
     searchWikipedia(searchStore);
   };
 
