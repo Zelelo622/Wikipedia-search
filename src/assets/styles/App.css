@@ -29,6 +29,7 @@
   margin-bottom: 32px;
   font-size: 100px;
   font-weight: 700;
+  text-align: center;
 }
 
 .search__form {
@@ -108,4 +109,26 @@
 
 .search__result-text {
   font-size: 16px;
+}
+
+@media (max-width: 970px) {
+  .search__title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  .search__result-wrapper {
+    width: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .search {
+    margin-top: 20px;
+  }
 }
